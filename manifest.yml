@@ -1,6 +1,8 @@
 ---
 env:
   RAILS_ENV: production
+services:
+- 'qaspark-db'
 applications:
 - name: qaspark
   buildpack: https://github.com/cloudfoundry/ruby-buildpack.git

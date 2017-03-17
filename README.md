@@ -22,6 +22,16 @@ When the PR is closed:
 1. Github sends a webhook to QA-Spark.
 2. QA-Spark will delete the Cloud Foundry application.
 
+## Deploying this application to Cloud Foundry
+
+TODO
+
+This guide assumes you are already logged in to cloud foundry.
+
+The application expects a postgres service called qaspark-db to exist. An example command to create it:
+ 
+`cf create-service SERVICE PLAN qaspark-db`
+
 ## Setting up CircleCI
 
 * go to https://circleci.com/ and authorize with Github.
