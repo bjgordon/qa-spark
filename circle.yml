@@ -1,0 +1,18 @@
+---
+machine:
+  ruby:
+    version: 2.3.3
+
+dependencies:
+  override:
+    - bin/ciprepare.sh
+
+test:
+  override:
+    - bin/citest.sh
+
+deployment:
+  all:
+    branch: /.*/
+    commands:
+      - bin/cideploy.sh

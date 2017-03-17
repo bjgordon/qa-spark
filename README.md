@@ -21,3 +21,19 @@ When a branch with an open PR is modified:
 When the PR is closed:
 1. Github sends a webhook to QA-Spark.
 2. QA-Spark will delete the Cloud Foundry application.
+
+## Setting up CircleCI
+
+* go to https://circleci.com/ and authorize with Github.
+* follow your new github repo
+* add the following environment variables via the circleci UI
+
+```
+CF_API
+
+CF_USER
+CF_PASSWORD
+CF_ORG
+CF_SPACE
+
+```
