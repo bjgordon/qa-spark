@@ -45,8 +45,10 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'guard-rspec'
+  gem 'rb-readline'
   gem 'spring-commands-rspec'
   gem 'vcr'
+  gem 'rails-controller-testing'
 end
 
 group :development do

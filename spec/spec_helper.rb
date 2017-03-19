@@ -17,7 +17,6 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require_relative 'support/controller_helpers'
 require 'devise'
 
 RSpec.configure do |config|
@@ -51,12 +50,11 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
-  config.include ControllerHelpers, type: :controller
-  Warden.test_mode!
-
-  config.after do
-    Warden.test_reset!
-  end
+  # Warden.test_mode!
+  #
+  # config.after do
+  #   Warden.test_reset!
+  # end
 
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
