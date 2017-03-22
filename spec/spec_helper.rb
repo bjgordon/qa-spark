@@ -16,7 +16,7 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-
+require 'factory_girl'
 require 'devise'
 
 RSpec.configure do |config|
