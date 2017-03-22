@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+password = ENV['SEED_USER_PASSWORD']
+raise 'SEED_USER_PASSWORD cannot be empty' if password.blank?
+
+unless admin = User.find_by(email: 'admin@example.gov.au')
+  admin = User.create!(email: 'admin@example.gov.au',
+                       password: password)
+end

@@ -21,5 +21,10 @@ tmp
 # Ignore Byebug command history file.
 .byebug_history
 
+#env var secrets used by dotenv
+.env
+
+# IDE files
 .idea
 *.iml
+
